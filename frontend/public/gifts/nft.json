@@ -1,0 +1,77 @@
+{
+ "demo": true,
+ "collections": [
+  {
+   "id": "demo0",
+   "name": "Лунный кот",
+   "floorTon": 3.2,
+   "image": "./gifts/demo0.svg"
+  },
+  {
+   "id": "demo1",
+   "name": "Янтарный ключ",
+   "floorTon": 5.8,
+   "image": "./gifts/demo1.svg"
+  },
+  {
+   "id": "demo2",
+   "name": "Зимний щит",
+   "floorTon": 9.4,
+   "image": "./gifts/demo2.svg"
+  },
+  {
+   "id": "demo3",
+   "name": "Огненное сердце",
+   "floorTon": 14.0,
+   "image": "./gifts/demo3.svg"
+  },
+  {
+   "id": "demo4",
+   "name": "Тихая корона",
+   "floorTon": 27.5,
+   "image": "./gifts/demo4.svg"
+  },
+  {
+   "id": "demo5",
+   "name": "Звёздный кубок",
+   "floorTon": 41.0,
+   "image": "./gifts/demo5.svg"
+  },
+  {
+   "id": "demo6",
+   "name": "Нефритовая сота",
+   "floorTon": 62.0,
+   "image": "./gifts/demo6.svg"
+  },
+  {
+   "id": "demo7",
+   "name": "Кристалл ночи",
+   "floorTon": 95.0,
+   "image": "./gifts/demo7.svg"
+  },
+  {
+   "id": "demo8",
+   "name": "Чёрная звезда",
+   "floorTon": 180.0,
+   "image": "./gifts/demo8.svg"
+  },
+  {
+   "id": "demo9",
+   "name": "Золотой шар",
+   "floorTon": 420.0,
+   "image": "./gifts/demo9.svg"
+  },
+  {
+   "id": "demo10",
+   "name": "Пустой трон",
+   "floorTon": 900.0,
+   "image": "./gifts/demo10.svg"
+  },
+  {
+   "id": "demo11",
+   "name": "Первый Алмаз",
+   "floorTon": 1650.0,
+   "image": "./gifts/demo11.svg"
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "updated": "demo",
+ "demo": true,
+ "gifts": [
+  {
+   "id": "9000",
+   "name": "Мишка",
+   "stars": 15,
+   "emoji": "",
+   "total": null,
+   "thumb": "9000.svg"
+  },
+  {
+   "id": "9001",
+   "name": "Сердце",
+   "stars": 15,
+   "emoji": "",
+   "total": null,
+   "thumb": "9001.svg"
+  },
+  {
+   "id": "9002",
+   "name": "Подарок",
+   "stars": 25,
+   "emoji": "",
+   "total": null,
+   "thumb": "9002.svg"
+  },
+  {
+   "id": "9003",
+   "name": "Роза",
+   "stars": 25,
+   "emoji": "",
+   "total": null,
+   "thumb": "9003.svg"
+  },
+  {
+   "id": "9004",
+   "name": "Торт",
+   "stars": 50,
+   "emoji": "",
+   "total": null,
+   "thumb": "9004.svg"
+  },
+  {
+   "id": "9005",
+   "name": "Букет",
+   "stars": 50,
+   "emoji": "",
+   "total": null,
+   "thumb": "9005.svg"
+  },
+  {
+   "id": "9006",
+   "name": "Ракета",
+   "stars": 50,
+   "emoji": "",
+   "total": null,
+   "thumb": "9006.svg"
+  },
+  {
+   "id": "9007",
+   "name": "Шампанское",
+   "stars": 50,
+   "emoji": "",
+   "total": null,
+   "thumb": "9007.svg"
+  },
+  {
+   "id": "9008",
+   "name": "Кубок",
+   "stars": 100,
+   "emoji": "",
+   "total": null,
+   "thumb": "9008.svg"
+  },
+  {
+   "id": "9009",
+   "name": "Кольцо",
+   "stars": 100,
+   "emoji": "",
+   "total": null,
+   "thumb": "9009.svg"
+  },
+  {
+   "id": "9010",
+   "name": "Алмаз",
+   "stars": 100,
+   "emoji": "",
+   "total": null,
+   "thumb": "9010.svg"
+  }
+ ]
+}

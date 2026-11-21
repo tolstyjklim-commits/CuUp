@@ -1,0 +1,76 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+model User {
+  id             String   @id @default(cuid())
+  telegramId     String   @unique
+  username       String?
+  firstName      String?
+  photoUrl       String?
+  createdAt      DateTime @default(now())
+  wallet         Wallet?
+  transactions   Transaction[]
+  withdrawals    WithdrawalRequest[]
+  payments       PaymentIntent[]
+}
+model Wallet {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  // Integer minor units; do not use floating-point money values.
+  balance   BigInt   @default(0)
+  currency  String   @default("QCP")
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id])
+}
+model Transaction {
+  id          String   @id @default(cuid())
+  userId      String
+  amount      BigInt
+  type        String
+  status      String   @default("pending")
+  description String?
+  createdAt   DateTime @default(now())
+  user        User     @relation(fields: [userId], references: [id])
+  @@index([userId, createdAt])
+}
+model Game {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  enabled     Boolean  @default(false)
+  config      Json?
+  createdAt   DateTime @default(now())
+}
+
+model WithdrawalRequest {
+  id          String   @id @default(cuid())
+  userId      String
+  amount      BigInt
+  method      String
+  destination String
+  status      String   @default("pending")
+  adminNote   String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  user        User     @relation(fields: [userId], references: [id])
+  @@index([status, createdAt])
+  @@index([userId, createdAt])
+}
+model PaymentIntent {
+  id             String   @id @default(cuid())
+  userId         String
+  provider       String
+  amountQcp      BigInt
+  amountFiatRub  BigInt
+  providerAmount String
+  providerRef    String?  @unique
+  status         String   @default("created")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  user           User     @relation(fields: [userId], references: [id])
+  @@index([userId, createdAt])
+}

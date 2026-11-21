@@ -1,4 +1,3 @@
-
 app.post('/api/admin/withdrawals/:id/decision', adminOnly, async (req, res) => {
   const id = Array.isArray(req.params.id)
     ? req.params.id[0]
